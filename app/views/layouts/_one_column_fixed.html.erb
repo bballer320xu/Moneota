@@ -1,7 +1,7 @@
 <% content_for :head do %>
 	<title>AccountAppBase</title>
-	<%= stylesheet_link_tag    "global/manifest" %>
 	<%= stylesheet_link_tag    "one_column_fixed/manifest" %>
+	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 <% end %>
@@ -24,10 +24,11 @@
 			<%= yield :navigation %>
 		</div>
 	</div>
-	<div id="content-container">
-		<div id="content-container2">
+	<div id="content-container">	
+		<div id="content-container2">	
 			<div id="content-container3">
 				<div id="content">
+					<%= render "global/alerts"%>
 					<%= yield :content %>
 				</div>
 			</div>

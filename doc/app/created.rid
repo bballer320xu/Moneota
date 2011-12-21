@@ -1,0 +1,9 @@
+Wed, 21 Dec 2011 01:54:12 -0500
+doc/README_FOR_APP	Tue, 20 Dec 2011 19:11:09 -0500
+app/controllers/application_controller.rb	Tue, 20 Dec 2011 19:11:09 -0500
+app/controllers/pages_controller.rb	Tue, 20 Dec 2011 20:04:02 -0500
+app/helpers/application_helper.rb	Tue, 20 Dec 2011 22:44:00 -0500
+app/helpers/pages_helper.rb	Tue, 20 Dec 2011 19:13:05 -0500
+app/mailers/newsletter.rb	Wed, 21 Dec 2011 01:16:37 -0500
+app/models/subscription.rb	Wed, 21 Dec 2011 01:45:25 -0500
+app/models/user.rb	Wed, 21 Dec 2011 01:15:48 -0500

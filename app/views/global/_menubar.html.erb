@@ -2,8 +2,7 @@
 	<% if user_signed_in? %>
 	<ul>
 		<li><%= link_to "Home", root_path %></li>
-		<li><a href="#">Option 2</a></li>
-		<li><a href="#">Option 3</a></li>
+		<li><%= link_to "Change Email Preferences", subscriptions_path %></li>
 		<li><%= link_to "Edit my Settings", edit_user_registration_path %></li>
 	</ul>
 	<% else %>
