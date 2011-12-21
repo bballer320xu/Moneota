@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<%= yield %>
-
+	<%= yield %>
+	
+	<% if Rails.env.development? %>
+		<div id="debug" style="border: 1px solid black; background-color: #dddddd; padding: 5px 15px; margin: 15px; font-size: .8em;">
+			<p style="font-size: 1.3em;">Debug Parameters</p>
+			<hr/>
+			<p><%= debug(params) %></p><br/><br/>
+		</div>
+	<% end %>
 </body>
 </html>
