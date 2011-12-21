@@ -1,0 +1,6 @@
+<%= form_for @subscription do |f| %>
+
+  <p><%= f.label :newsletter %>: <%= f.check_box :newsletter %></p>
+
+  <p><%= f.submit "Save Changes" %></p>
+<% end %>

@@ -13,10 +13,7 @@ describe Subscription do
   end
   
   describe "newsletter" do
-    it "should require a value" do
-      invalid_subscription = Subscription.new(@attr.merge(:newsletter  => nil))
-      invalid_subscription.should_not be_valid    
-    end
+
   end
   
 end

@@ -10,4 +10,11 @@ class User < ActiveRecord::Base
             :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i } 
 
   has_one :subscription
+  
+  def self.all_with_active_newsletter
+    User.all :joins => :subscription, :conditions => {:subscriptions => {:newsletter => true}}
+  end
+  
+  
 end
+
