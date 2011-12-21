@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AccountAppBase</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<%= yield :head%>
 </head>
+	
 <body>
 
-	<%= yield %>
+	<%= yield :body%>
 	
 	<% if Rails.env.development? %>
 		<div id="debug" style="border: 1px solid black; background-color: #dddddd; padding: 5px 15px; margin: 15px; font-size: .8em;">

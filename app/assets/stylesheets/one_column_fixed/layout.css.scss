@@ -68,28 +68,17 @@ body {
 	#content-container3 {
 	  float: left;
 	  width: 900px;
-	  background: white url(two-fixed-background.gif) repeat-y 100% 0; 
+	  background: white; 
 	}
 
 	#content {
 	  clear: left;
 	  float: left;
-	  width: 560px;
+	  width: 840px;
 	  padding: 20px 0;
 	  margin: 0 0 0 30px;
 	  display: inline;
 	  h2 {
-	    margin: 0; 
-		} 
-	}
-
-	#sidebar {
-	  float: right;
-	  width: 240px;
-	  padding: 20px 0;
-	  margin: 0 20px 0 0;
-	  display: inline;
-	  h3 {
 	    margin: 0; 
 		} 
 	}
