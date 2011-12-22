@@ -3,7 +3,6 @@ class SubscriptionsController < ApplicationController
   def index
     @subscription = current_user.subscription
     logger.debug "Newsletter is #{@subscription.newsletter}"
-    Email.newsletter
   end
 
   def update

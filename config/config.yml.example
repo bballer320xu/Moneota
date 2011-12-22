@@ -1,13 +1,20 @@
 development:
   ses_access_key_id: Secret
   ses_secret_access_key: SuperSecret
+  mailer_address: mailer@email.com
   db_username: Matt
   db_password: password
 
 test:
-  db_username: User
-  db_password: password
+	ses_access_key_id: Secret
+	ses_secret_access_key: SuperSecret
+	mailer_address: mailer@email.com
+	db_username: Matt
+	db_password: password
 
 production:
-  db_username: User
-  db_password: password
+	ses_access_key_id: Secret
+	ses_secret_access_key: SuperSecret
+	mailer_address: mailer@email.com
+	db_username: Matt
+	db_password: password

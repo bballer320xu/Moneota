@@ -1,18 +1,21 @@
-# Use this file to easily define all of your cron jobs.
+#   
+#   - Automated Mailer Configuration -
 #
-# It's helpful, but not entirely necessary to understand cron before proceeding.
-# http://en.wikipedia.org/wiki/Cron
-
-# Example:
+#   1. Register your email address in the SES account.
+#   2. Set the email address in config.yml.
+#   3. Deploy the application and run "bundle install".
+#   4. Run this command on the server:  "whenever --update-crontab account_app_base --set environment=production"
+#   5. Run this command to verify the cronjob is configured: crontab -l
+#   6. Uncomment the method below to start processing
 #
-# set :output, "/path/to/my/cron_log.log"
+#   FYI: The rake task is located in lib/tasks/mailer.rake.  Put additional email methods and automated tasks there.
 #
-every 1.minute do
-  runner "Email.newsletter"
-end
 #
-# every 4.days do
-#   runner "AnotherModel.prune_old_records"
-# end
-
-# Learn more: http://github.com/javan/whenever
+#   --------------------------------------------------------
+#   Deliver the newsletter each month
+#   --------------------------------------------------------
+#   every 1.month do    
+#     rake "deliver_newsletter"                 
+#   end
+#   -------------------------------------------------------- 
+#

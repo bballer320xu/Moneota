@@ -14,8 +14,8 @@ test:
   adapter: postgresql
   host: localhost
   port: 5432
-  username: Matt
-  password: password
+  username: <%= APP_CONFIG["db_username"] %>
+  password: <%= APP_CONFIG["db_password"] %>
   database: app_test
   schema_search_path: public
   encoding: utf8
@@ -26,8 +26,8 @@ production:
   adapter: postgresql
   host: localhost
   port: 5432
-  username: Matt
-  password: password
+  username: <%= APP_CONFIG["db_username"] %>
+  password: <%= APP_CONFIG["db_password"] %>
   database: app_prod
   schema_search_path: public
   encoding: utf8

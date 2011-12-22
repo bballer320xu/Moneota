@@ -1,5 +1,5 @@
 class Email < ActionMailer::Base
-  default from: "postman@myapp.com"
+  default from: "#{APP_CONFIG['mailer_address']}"
   
   def newsletter
     @users = User.all_with_active_newsletter
@@ -8,6 +8,4 @@ class Email < ActionMailer::Base
       mail(:to => user.email, :subject => "Newsletter")
     end
   end
-  
-
 end
