@@ -1,4 +1,4 @@
-# Beansprout
+# Beansprout #
 
 Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1.  The idea behind this project was to eliminate boilerplate work that goes into common web application designs. 
 
