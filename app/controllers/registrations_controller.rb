@@ -1,4 +1,3 @@
-
 class RegistrationsController < Devise::RegistrationsController
   
   include Devise::Controllers::InternalHelpers

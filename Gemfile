@@ -13,7 +13,7 @@ end
 
 gem 'devise'
 gem 'jquery-rails'
-
+ 
 group :development do
   gem 'rspec-rails'
 end
