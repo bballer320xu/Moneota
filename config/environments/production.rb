@@ -19,6 +19,11 @@ AccountAppBase::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  
+  # Don't care if the mailer can't send
+  config.action_mailer.raise_delivery_errors = false
+  
+  config.action_mailer.delivery_method = :ses
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH

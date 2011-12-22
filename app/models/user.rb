@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   validates :email,
             :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i } 
 
-  has_one :subscription
+  has_one :subscription, :dependent => :destroy
   
   def self.all_with_active_newsletter
     User.all :joins => :subscription, :conditions => {:subscriptions => {:newsletter => true}}

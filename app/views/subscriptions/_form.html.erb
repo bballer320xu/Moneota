@@ -1,6 +1,5 @@
-<%= form_for @subscription do |f| %>
-
+<%= form_for @subscription, :url => subscription_path(@subscription) do |f| %>
   <p><%= f.label :newsletter %>: <%= f.check_box :newsletter %></p>
-
   <p><%= f.submit "Save Changes" %></p>
 <% end %>
+
