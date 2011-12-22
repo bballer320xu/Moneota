@@ -24,6 +24,9 @@ AccountAppBase::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   
   config.action_mailer.delivery_method = :ses
+  
+  # Base URL for development
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
