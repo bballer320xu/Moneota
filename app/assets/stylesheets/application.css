@@ -5,4 +5,6 @@
  *= require_self
  *= require_tree ./global
  *= require jqueryui/jqueryui
+ *= require formalize/formalize
+ *= require 960/960_12_col
 */

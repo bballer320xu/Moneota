@@ -1,5 +1,10 @@
 
 $(document).ready(function(){
-	$('#flash').delay(5000).fadeOut("slow");
+
+	// Close flash box on a click
+	  $('#flash_close_button').click(function(){
+				$('#flash').fadeOut("slow");
+		});
+		
 });	
 	

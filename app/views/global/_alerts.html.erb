@@ -1,4 +1,9 @@
 <% flash.each do |key,msg| %>
-  <%= content_tag :div, msg, :id => "flash", :class => "flash #{key}"  %>
+	<div id="flash" class="flash <%=key%>">
+  	<%= msg %>
+		<div id="flash_close" class="float_right">
+			<%= link_to "Hide", "#", :id => "flash_close_button" %>
+		</div>
+	</div>
 <% end %>
 

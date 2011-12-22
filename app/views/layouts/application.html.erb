@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AccountAppBase</title>
+	<%= stylesheet_link_tag    "application" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+	
+<body>
+	<%= render "global/menubar"%>
+	<div id="body_wrapper" class="container_12">
+		
+		<div id="header" class="grid_12">
+			<div id="title" class="grid_6 alpha">
+				<h1>
+					<%= title %>
+				</h1>
+			</div>
+			<div id="alert_container" class="grid_6 omega">
+				<%= render "global/alerts"%>
+			</div>
+		</div>
+		
+		<div id="navigation" class="grid_12">
+			<%= yield :navigation %>
+			<div id="login">
+			  	<%= render "global/login"%>
+			</div>
+		</div>
+
+		<% if content_for?(:sidebar) %>
+		  <div id="content" class="grid_9">
+				<%= yield :content %>
+			</div>
+			<div id="sidebar" class="grid_3">
+				<%= yield :sidebar %>
+			</div>
+		<% else %>
+			<div id="content" class="grid_12">
+				<%= yield :content %>
+			</div>
+		<% end %>
+
+		<div id="footer" class="grid_12">
+				<%= footer %>
+		</div>
+	</div>
+	
+	<% if Rails.env.development? %>
+		<div id="debug">
+			<h2>Debug Parameters</h2>
+			<p><%= debug(params) %></p><br/><br/>
+		</div>
+	<% end %>
+</body>
+</html>

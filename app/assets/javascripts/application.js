@@ -8,3 +8,4 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require modals
+//= require formalize/jquery.formalize.min
