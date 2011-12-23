@@ -13,3 +13,4 @@ If your application requires user authentication, a simple grid layout, email su
 * Whenever gem enabled for easy cronjob management
 * Baseline CSS with [960 Framework](http://960.gs/) and [Formalize](http://formalize.me/) using a 12 column grid layout
 * Postgres enabled
+* Debug window in development mode to expedite bug fixing

@@ -1,4 +1,5 @@
 development:
+	app_name: Beansprout
   ses_access_key_id: Secret
   ses_secret_access_key: SuperSecret
   mailer_address: mailer@email.com
@@ -6,6 +7,7 @@ development:
   db_password: password
 
 test:
+	app_name: Beansprout
 	ses_access_key_id: Secret
 	ses_secret_access_key: SuperSecret
 	mailer_address: mailer@email.com
@@ -13,6 +15,7 @@ test:
 	db_password: password
 
 production:
+	app_name: Beansprout
 	ses_access_key_id: Secret
 	ses_secret_access_key: SuperSecret
 	mailer_address: mailer@email.com

@@ -2,4 +2,25 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  global:
+    app_name: Beansprout
+    copyright: Copyright © 2012
+    error: An error occurred
+    success: The operation was successful
+  
+  menu:
+    home: Home
+    change_email_preferences: Change Email Preferences
+    edit_my_settings: Edit my Settings
+    signup: Sign Up
+    signin: Sign In
+    signout: Sign Out
+    signed_in: Signed In
+    
+  
+  subscription:
+    index:
+    update:
+      flashes:
+        success: Successfully updated your email settings.
+        error: An error occurred during the update.

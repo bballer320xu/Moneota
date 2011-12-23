@@ -1,4 +1,4 @@
-AccountAppBase::Application.routes.draw do
+Beansprout::Application.routes.draw do
   
   devise_for :users, :controllers => {:registrations => "registrations"}
 

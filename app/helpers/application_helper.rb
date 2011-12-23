@@ -1,11 +1,15 @@
 module ApplicationHelper
   
   def footer
-    "Copyright 2012 - App Name Here"
+     raw("#{t('global.app_name')} #{bar_break} #{t('global.copyright')}")
   end  
   
   def title
-    "App Name Here"
+     t('global.app_name')
+  end
+  
+  def bar_break
+    raw("&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;")
   end
   
 
