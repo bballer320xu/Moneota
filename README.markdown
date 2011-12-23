@@ -1,8 +1,9 @@
 # Beansprout #
 
-Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1.  The idea behind this project was to eliminate boilerplate work that goes into common web application designs. 
 
-If your application requires user authentication, a simple grid layout, email subscription delivery and a wireframe CSS layout that can be extended.  
+## Introduction ##
+Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1.  The idea behind this project was to eliminate boilerplate work that goes into common web application designs. The monochrome palette allows one to easily interject their color scheme.
+
 
 ## Features ##
 
@@ -12,7 +13,9 @@ If your application requires user authentication, a simple grid layout, email su
 * Rake job & template mailer configured for monthly newsletter delivery
 * Whenever gem enabled for easy cronjob management
 * Baseline CSS with [960 Framework](http://960.gs/) and [Formalize](http://formalize.me/) using a 12 column grid layout
+* Imageless gradients generated with the [ColorZilla Gradient Generator](http://www.colorzilla.com/gradient-editor/)
 * Postgres enabled
+* Stylized flash windows with JQuery Fadeout Hide option
 * Debug window in development mode to expedite bug fixing
 
 
@@ -34,7 +37,11 @@ rake db:migrate
 
 
 ## Screenshots ##
+
+### A view of the home page ###
 ![Home Page](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/1.jpg)
+### Demonstrating the Flash Error Message & Login Page ###
 ![Signin with Error](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/2.jpg)
+### The Subscription Management Page ###
 ![Subscription Management](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/3.jpg)
 
