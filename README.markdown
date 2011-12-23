@@ -24,7 +24,7 @@ Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1
 1. Setup a rails development environment to your liking.  I highly recommend [Michael Hartl's Tutorial to get started](http://zfer.us/UzUCU)
 2. Install [Postgres](http://www.postgresql.org/) if you don't want to use sqlite
 3. Fork this into your development environment.  Steps can be found [here](http://help.github.com/fork-a-repo/).  Alternatively, you can clone if you want to use this as a baseline for your own application ```git clone git://github.com/bballer320xu/Beansprout.git```
-4. Rename the config.yml.example file to config.yml.
+4. Rename the config.example.yml file to config.yml.
 5. Set the config.yml file appropriately.  If you do not have an SES account yet, you can still use the application without email functionality.  When you are ready to turn it on, visit the [Amazon SES Homepage](http://aws.amazon.com/ses/) and sign up
 6. Run your bundler  ```
 bundle install
