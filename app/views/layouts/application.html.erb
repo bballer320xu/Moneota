@@ -5,6 +5,7 @@
 	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<!--[if gte IE 9]>
 	  <style type="text/css">.gradient {filter: none;}</style>
@@ -60,7 +61,7 @@
 	<% if Rails.env.development? %>
 		<div id="debug">
 			<h2>Debug Parameters</h2>
-			<p><%= debug(params) %></p><br/><br/>
+			<%= debug(params) %><br/><br/>
 		</div>
 	<% end %>
 </body>

@@ -2,7 +2,7 @@
 
 
 ## Introduction ##
-Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1.  The idea behind this project was to eliminate boilerplate work that goes into common web application designs. The monochrome palette allows one to easily interject their own color scheme.
+Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1. The idea behind this project was to eliminate boilerplate work that goes into common web application designs while enforcing solid web standards and proven methodologies. The result is a solid foundation to build on. 
 
 
 ## Features ##
