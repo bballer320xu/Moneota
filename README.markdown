@@ -37,3 +37,4 @@ rake db:migrate
 ![Home Page](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/1.jpg)
 ![Signin with Error](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/2.jpg)
 ![Subscription Management](https://github.com/bballer320xu/Beansprout/raw/master/doc/images/3.jpg)
+
