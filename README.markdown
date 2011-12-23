@@ -31,3 +31,9 @@ rake db:create
 rake db:migrate
 ```
 8. Test it out [here](http://localhost:3000)
+
+
+## Screenshots ##
+![Alt text](/doc/images/1.jpg)
+![Alt text](/doc/images/2.jpg)
+![Alt text](/doc/images/3.jpg)
