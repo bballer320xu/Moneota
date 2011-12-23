@@ -27,11 +27,13 @@ Beansprout is a baseline Web Application template designed for Ruby on Rails 3.1
 4. Rename the config.example.yml file to config.yml.
 5. Set the config.yml file appropriately.  If you do not have an SES account yet, you can still use the application without email functionality.  When you are ready to turn it on, visit the [Amazon SES Homepage](http://aws.amazon.com/ses/) and sign up
 6. Run your bundler
-		bundle install
+
+				bundle install
 
 7. Populate your database  
-		rake db:create  
-		rake db:migrate
+
+				rake db:create  
+				rake db:migrate
 
 8. Test it out [here](http://localhost:3000)
 9. Optional: If you want to test your newsletter task, navigate to config/schedule.rb and follow the steps there.
