@@ -20,17 +20,14 @@ If your application requires user authentication, a simple grid layout, email su
 
 1. Setup a rails development environment to your liking
 2. Install Postgres if you don't want to use sqlite
-3. Fork this into your development environment.  Steps can be found [here](http://help.github.com/fork-a-repo/).  Alternatively, you can clone if you want to use this as a baseline for your own application 
-'''
-git clone git://github.com/bballer320xu/Beansprout.git
-'''
+3. Fork this into your development environment.  Steps can be found [here](http://help.github.com/fork-a-repo/).  Alternatively, you can clone if you want to use this as a baseline for your own application ```git clone git://github.com/bballer320xu/Beansprout.git```
 4. Rename the config.yml.example file to config.yml.
 5. Set the config.yml file appropriately.  If you do not have an SES account yet, you can still use the application without email functionality.  When you are ready to turn it on, visit the [Amazon SES Homepage](http://aws.amazon.com/ses/) and sign up
-6. Run your bundler```ruby
-bundle install
+6. Run your bundler ```
+bundle install;
 ```
-7. Populate your database```ruby
-rake db:create
-rake db:migrate
+7. Populate your database ```
+rake db:create;
+rake db:migrate;
 ```
 8. Test it out [here](http://localhost:3000)
