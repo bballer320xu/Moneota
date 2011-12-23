@@ -34,6 +34,6 @@ rake db:migrate
 
 
 ## Screenshots ##
-![Alt text](/doc/images/1.jpg)
+![Alt text](doc/images/1.jpg)
 ![Alt text](/doc/images/2.jpg)
 ![Alt text](/doc/images/3.jpg)
