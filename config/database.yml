@@ -5,7 +5,7 @@ development:
   port: 5432
   username: <%= APP_CONFIG["db_username"] %>
   password: <%= APP_CONFIG["db_password"] %>
-  database: app_dev
+  database: moneota_dev
   schema_search_path: public
   encoding: utf8
   template: template1
@@ -16,7 +16,7 @@ test:
   port: 5432
   username: <%= APP_CONFIG["db_username"] %>
   password: <%= APP_CONFIG["db_password"] %>
-  database: app_test
+  database: moneota_test
   schema_search_path: public
   encoding: utf8
   template: template1
@@ -28,7 +28,7 @@ production:
   port: 5432
   username: <%= APP_CONFIG["db_username"] %>
   password: <%= APP_CONFIG["db_password"] %>
-  database: app_prod
+  database: moneota_prod
   schema_search_path: public
   encoding: utf8
   template: template1

@@ -1,4 +1,4 @@
-Beansprout::Application.routes.draw do
+Moneota::Application.routes.draw do
   
   devise_for :users, :controllers => {:registrations => "registrations"}
 
