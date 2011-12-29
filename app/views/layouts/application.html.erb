@@ -4,6 +4,13 @@
 	<title><%= title %></title>
 	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>
+	<% if content_for?(:head) %>
+		<%= yield :head %>
+	<% else %>
+		<%= stylesheet_link_tag "webapp" %>
+	<% end %>
+	
+	<link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
 	<%= csrf_meta_tags %>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
@@ -14,55 +21,6 @@
 </head>
 	
 <body>
-	<%= render "global/menubar"%>
-	<div id="body_wrapper" class="container_12">
-		
-		<%# Define the Page Header %>
-		<div id="header" class="grid_12 gradient">
-			<div id="title" class="grid_6 alpha">
-				<h1>
-					<%= title %>
-				</h1>
-			</div>
-			<div id="alert_container" class="grid_6 omega">
-				<%= render "global/alerts"%>
-			</div>
-		</div>
-		
-		<%# Define the Navigation Bar %>
-		<div id="navigation" class="grid_12 gradient">
-			<%= yield :navigation %>
-			<div id="login">
-			  	<%= render "global/login"%>
-			</div>
-		</div>
-
-		<%# Determine the need for a sidebar and display either a 1 or 2 column main page%>
-		<% if content_for?(:sidebar) %>
-		  <div id="content" class="grid_9">
-				<%= yield :content %>
-			</div>
-			<div id="sidebar" class="grid_3">
-				<%= yield :sidebar %>
-			</div>
-		<% else %>
-			<div id="content" class="grid_12">
-				<%= yield :content %>
-			</div>
-		<% end %>
-
-		<%# Define the Page Footer %>
-		<div id="footer" class="grid_12 gradient">
-				<%= footer %>
-		</div>
-	</div>
-	
-	<%# Development Debug Box %>
-	<% if Rails.env.development? %>
-		<div id="debug">
-			<h2>Debug Parameters</h2>
-			<%= debug(params) %><br/><br/>
-		</div>
-	<% end %>
+<%= yield :body %>
 </body>
 </html>

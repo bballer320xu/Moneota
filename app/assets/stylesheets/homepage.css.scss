@@ -1,0 +1,101 @@
+body{
+	background: #343434;
+
+	
+	#content{
+		background: url('layout/bulletin_slice.jpg') repeat-x top right #343434;
+		height: 650px;
+		width: 100%;
+		float: left;
+		
+		#bulletin{
+			height: 700px;
+			background: url('layout/bulletin.jpg') no-repeat top center;
+		}
+	}
+	
+	
+	#header {
+		margin: 0;
+		padding: 0;
+		background: url('layout/logo_lg.jpg') no-repeat top left;
+		height: 125px;
+		
+		#login{
+			background: url('layout/login.jpg') no-repeat top right;
+			height: 100px;
+			width: 250px;
+			text-align: center;
+			color:343434;
+			a{
+				line-height: 50px;
+				color: black;
+				font-size: 35px;
+				 text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+			}
+		}
+
+	  h1 {
+	    margin: 0; 
+		}
+	}
+	
+	#footer {
+		font-size: 24px;
+	  margin: 0 auto;
+		width: 100%;
+	  text-align: right;
+	  height: 50px; 
+	  clear: left;
+	  color: #fff;			
+		p{
+			padding-right: 50px;
+		}
+	}
+
+	// Additional Classes
+
+
+	// Rails debugging window.  Always show during development.
+
+	#button_bar{
+		width: 100%; 
+		height: 30px; 
+		border-top: 1px solid #333333; 
+		padding: 10px; 
+		margin-left: -10px;
+
+
+	}
+	#debug{
+		
+		h2{
+			font: courier;
+		}
+						 text-shadow: none;
+						font: courier;
+		border-top: 5px ridge red;
+		background-color: #fff; 
+		padding: 5px 15px; 
+		margin: 0; 
+		font-size: .8em;
+	}
+
+	// Quick float to the right
+	.float_right{
+		float: right;
+		margin: 0 0 0 10px;
+	}
+
+	// Quick float to the left
+	.float_left{
+		float: left;
+		margin: 0 10px 0 0;
+	}
+
+	// Any field with errors set by the rails engine, change the text
+	.field_with_errors{
+		color: red;
+		font-weight: bold;
+	}
+}
