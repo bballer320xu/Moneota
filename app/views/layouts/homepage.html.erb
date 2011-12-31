@@ -3,10 +3,12 @@
 <% end %>
 
 <% content_for :body do %>
-	<div id="header" class="grid_12">
-		<%= yield :header %>
-	</div>
 
+	<div id="body_wrapper" class="container_12">
+		<div id="header" class="grid_12">
+			<%= yield :header %>
+		</div>
+	</div>
 	<div id="content">
 		<%= yield :content %>
 	</div>
