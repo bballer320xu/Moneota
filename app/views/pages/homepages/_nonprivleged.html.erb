@@ -8,21 +8,10 @@
 
 <% content_for :content do %>
 <div id="bulletin">
-	<div id="links" class="container_12">
-		<div id="home" class="grid_2 prefix_5">
-			<%= link_to "Home", root_path %>
-		</div>
-		<div id="home" class="grid_2">
-			<%= link_to "About", root_path %>
-		</div>
-		<div id="home" class="grid_2 suffix_1">
-			<%= link_to "Contact", root_path %>
-		</div>
-		<div id="signup" class="grid_5 suffix_7">
+	<div id="signup">
 		<%= link_to image_tag("layout/signup.png"), new_user_registration_path %>
-		</div>
 	</div>
 </div>
 <% end %>
 
-<%= render :file => 'layouts/non_privleged' %>
+<%= render :file => 'layouts/homepage' %>

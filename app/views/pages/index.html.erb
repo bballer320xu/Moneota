@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-	<%= render :partial => "pages/homepages/private"%>
+	<%= render :partial => "pages/homepages/privleged"%>
 <% else %>
-	<%= render :partial => "pages/homepages/open"%>
+	<%= render :partial => "pages/homepages/nonprivleged"%>
 <% end %>

@@ -11,24 +11,8 @@ body{
 			height: 700px;
 			background: url('layout/bulletin.jpg') no-repeat top center;
 			
-			#links{			
-				padding-top: 35px;	
-				text-align: center;
-					a{
-			    display: block;
-			    padding: 5px 20px;
-			    color: #343434;
-					font-weight: bold;
-					font-size: 32px;
-			    text-decoration: none;
-					&:hover{
-						text-decoration: underline;
-						text-shadow: 0 0 0.2em #ECE283, 0 0 0.2em #ECE283, 0 0 0.2em #ECE283
-					}
-				}
-			}
 			#signup{
-				padding-top: 300px;
+				padding: 400px 0 0 150px;
 			}
 		}
 	}
@@ -36,8 +20,8 @@ body{
 	
 	#header {
 		margin: 0;
-		padding: 0 20px;
-		height: 130px;
+		padding: 0;
+		height: 125px;
 		
 		#login{
 			text-align: center;
@@ -58,12 +42,20 @@ body{
 		}
 	}
 
+
+	// Additional Classes
+
+
+	// Rails debugging window.  Always show during development.
+
 	#button_bar{
 		width: 100%; 
 		height: 30px; 
 		border-top: 1px solid #333333; 
 		padding: 10px; 
 		margin-left: -10px;
+
+
 	}
 
 }
