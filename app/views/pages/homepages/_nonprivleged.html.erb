@@ -1,0 +1,17 @@
+<% content_for :header do %>
+	<%= link_to image_tag("layout/logo_lg.jpg"), root_path %>
+	<div id="login" class="float_right">
+	  <p class="float_right">Already a member?</p> <%= button_to "Log In", new_user_session_path, :method => "get", :class => "float_right"  %>
+	</div>
+
+<% end %>
+
+<% content_for :content do %>
+<div id="bulletin">
+	<div id="signup">
+		<%= link_to image_tag("layout/signup.png"), new_user_registration_path %>
+	</div>
+</div>
+<% end %>
+
+<%= render :file => 'layouts/homepage' %>

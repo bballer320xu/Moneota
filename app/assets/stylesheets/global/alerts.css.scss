@@ -1,14 +1,11 @@
 
 // Error Boxes
 .flash {
-		margin: -2px;
+		margin-bottom: 10px;
     border: 1px solid;
     padding: 10px 10px 10px 50px;
     background-repeat: no-repeat;
     background-position: 10px center;
-		float: right;
-		width: 100%;
-
 
 		&.info {
 		   color: #00529B;
@@ -48,4 +45,21 @@
 .field_with_errors{
 	color: red;
 	font-weight: bold;
+}
+
+#error_explanation{
+	h2{
+		font-size: 16px;
+		border-bottom: none;
+		margin-bottom: 0px;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+	margin: -10px 0 10px 0;
+	border: 1px solid #D8000C;
+  color: #D8000C;
+  background: url('../icons/alert.png') no-repeat 1% 50% #FFBABA;
+	padding: 5px 15px 5px 50px;
 }

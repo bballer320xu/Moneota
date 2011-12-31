@@ -1,6 +1,8 @@
 <% content_for :content do %>
 	<h2>Sign in</h2>
 	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+		<%= render :partial => "global/alerts" %>
+		
 	  <p><%= f.label :email %><br />
 	  <%= f.email_field :email %></p>
 
