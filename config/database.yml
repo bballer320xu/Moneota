@@ -28,7 +28,7 @@ production:
   port: 5432
   username: <%= APP_CONFIG["db_username"] %>
   password: <%= APP_CONFIG["db_password"] %>
-  database: moneota_prod
+  database: moneota_production
   schema_search_path: public
   encoding: utf8
   template: template1
