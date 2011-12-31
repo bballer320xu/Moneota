@@ -1,14 +1,13 @@
 <% content_for :head do %>
-	<%= stylesheet_link_tag "homepage" %>
+	<%= stylesheet_link_tag "non_privleged" %>
 <% end %>
 
 <% content_for :body do %>
-
-	<div id="body_wrapper" class="container_12">
-		<div id="header" class="grid_12">
-			<%= yield :header %>
-		</div>
+	<div id="header">
+		<%= yield :header %>
 	</div>
+
+	<div id="body_wrapper" class="container_12"></div>
 	<div id="content">
 		<%= yield :content %>
 	</div>
