@@ -101,6 +101,10 @@ body {
   height: 100%;
 }
 
+html{
+	overflow-y: scroll;
+}
+
 article,
 aside,
 details,
@@ -205,3 +209,5 @@ svg {
 */
   overflow: hidden;
 }
+
+

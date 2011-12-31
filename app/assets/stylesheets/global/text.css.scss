@@ -8,10 +8,14 @@
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
 body {
-	font: 20px 'Boogaloo', cursive;
+	color: #222;
+	font: 12px 'Architects Daughter', cursive;
+	text-shadow: 1px 1px #bbb;
 	letter-spacing: 1px;
-	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+
 }
 
 hr {
@@ -30,7 +34,8 @@ h1 {
 
 h2 {
   font-size: 23px;
-	border-bottom: 1px solid #333333;
+	padding: 0 0 5px 0;
+	border-bottom: 4px groove #343434;
 }
 
 h3 {

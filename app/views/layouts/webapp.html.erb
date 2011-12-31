@@ -1,45 +1,40 @@
 <% content_for :body do %>
 	<%= render "global/menubar"%>
-	<div id="body_wrapper" class="container_12">
 	
-		<%# Define the Page Header %>
-		<div id="header" class="grid_12 gradient">
-			<div id="title" class="grid_6 alpha">
-				<h1>
-					<%= title %>
-				</h1>
-			</div>
-			<div id="alert_container" class="grid_6 omega">
-				<%= render "global/alerts"%>
-			</div>
-		</div>
-	
-		<%# Define the Navigation Bar %>
-		<div id="navigation" class="grid_12 gradient">
+	<div id="topbar">
+		  <%= link_to image_tag("layout/logo_sm.jpg"), root_path %>
+		<div id="navigation">
 			<%= yield :navigation %>
-			<div id="login">
-			  	<%= render "global/login"%>
-			</div>
 		</div>
-
-		<%# Determine the need for a sidebar and display either a 1 or 2 column main page%>
-		<% if content_for?(:sidebar) %>
-		  <div id="content" class="grid_9">
-				<%= yield :content %>
-			</div>
-			<div id="sidebar" class="grid_3">
-				<%= yield :sidebar %>
-			</div>
-		<% else %>
-			<div id="content" class="grid_12">
-				<%= yield :content %>
-			</div>
-		<% end %>
-
-		<%# Define the Page Footer %>
-		<div id="footer" class="grid_12 gradient">
-				<%= footer %>
+	</div>
+	<div id="steelbar">
+	</div>
+	<div id="body_wrapper">
+		<div id="content_wrapper" class="container_12">
+			<% if content_for?(:sidebar) %>
+				<div id="half_top" class="grid_9"></div>
+			  <div id="half" class="grid_9">
+					<%= yield :content %>
+				</div>
+				<div id="half_bottom" class="grid_9"></div>
+				<div id="sidebar_top" class="grid_3"></div>
+				<div id="sidebar" class="grid_3">
+					<%= yield :sidebar %>
+				</div>
+				<div id="sidebar_bottom" class="grid_3"></div>
+			<% else %>
+				<div id="full_top" class="grid_12"></div>
+				<div id="full" class="grid_10 prefix_1 suffix_1">
+					<%= yield :content %>
+				</div>
+				<div id="full_bottom" class="grid_12"></div>
+			<% end %>
 		</div>
+	</div>
+	<div id="steelbar">
+	</div>
+	<div id="footer">
+		<p><%= footer %></p>
 	</div>
 
 	<%# Development Debug Box %>

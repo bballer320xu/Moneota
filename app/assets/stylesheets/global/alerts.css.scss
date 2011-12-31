@@ -43,3 +43,9 @@
 			}
 		}
 }
+
+// Any field with errors set by the rails engine, change the text
+.field_with_errors{
+	color: red;
+	font-weight: bold;
+}

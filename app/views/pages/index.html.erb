@@ -1,11 +1,5 @@
-<% content_for :header do %>
-<div id="login" class="float_right">
-	<%= link_to "Log In", new_user_session_path %>
-</div>
+<% if user_signed_in? %>
+	<%= render :partial => "pages/homepages/privleged"%>
+<% else %>
+	<%= render :partial => "pages/homepages/nonprivleged"%>
 <% end %>
-
-<% content_for :content do %>
-<div id="bulletin"></div>
-<% end %>
-
-<%= render :file => 'layouts/homepage' %>
