@@ -2,7 +2,7 @@
 	<%= render "global/menubar"%>
 	
 	<div id="topbar">
-		  <%= link_to image_tag("layout/logo_sm.jpg"), root_path %>
+		  <%= link_to image_tag("layout/logo_sm.jpg"), root_path, :class => "float_left" %>
 		<div id="navigation">
 			<%= yield :navigation %>
 		</div>
