@@ -8,11 +8,9 @@
 	</ul>
 	<% else %>
 	<ul>
-		<li><a href="#">Option 4</a></li>
-		<li><a href="#">Option 3</a></li>
-		<li><a href="#">Option 2</a></li>
+		<li><%= link_to t('menu.contact'), root_path %></li>
+		<li><%= link_to t('menu.about'), root_path %></li>
 		<li><%= link_to t('menu.home'), root_path %></li>
 	</ul>
 	<% end %>
-	
 <% end %>

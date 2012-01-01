@@ -1,16 +1,21 @@
+<%= render "global/menubar"%>
+
 <% content_for :head do %>
 	<%= stylesheet_link_tag "homepage" %>
 <% end %>
 
 <% content_for :body do %>
-
-	<div id="body_wrapper" class="container_12">
-		<div id="header" class="grid_12">
-			<%= yield :header %>
-		</div>
-	</div>
+<div id="header">
+	<%= yield :header %>
+</div>
 	<div id="content">
+
+		<div id="navigation" class="float_right">
+			<%= yield :navigation %>
+		</div>
+
 		<%= yield :content %>
+
 	</div>
 
 

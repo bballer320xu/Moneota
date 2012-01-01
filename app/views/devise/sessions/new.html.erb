@@ -1,5 +1,7 @@
 <% content_for :content do %>
-	<h2>Sign in</h2>
+
+	<%= render :partial => "global/headerbar", :locals => {:text => "Sign In"} %>
+	
 	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 		<%= render :partial => "global/alerts" %>
 		

@@ -1,27 +1,57 @@
 body{
 	background: #343434;
 
+
+	#navigation {
+		font-size: 38px;
+		line-height: 40px;
+
+	  ul {
+	    margin: 0;
+	    padding: 40px 80px;
+			float: right;
+	    li {
+	      list-style-type: none;
+	      display: inline; 
+			} 
+		}
+	  li a {
+	    display: block;
+	    float: right;
+	    padding: 5px 20px;
+	    color: #dedede;
+	    text-decoration: none;
+			text-shadow: 1px 1px #000;
+			&:hover{
+				color: #343434;
+				text-shadow: 0 0 0.5em #ECE283, 0 0 0.5em #ECE283, 0 0 0.5em #ECE283;
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+
 	#content{
 		background: url('layout/bulletin_slice.jpg') repeat-x top right #343434;
 		height: 650px;
 		width: 100%;
-		float: left;
-		
+
 		#bulletin{
 			height: 700px;
 			background: url('layout/bulletin.jpg') no-repeat top center;
+		}
 			
-			#signup{
-				padding: 400px 0 0 150px;
-			}
+		#signup{
+			margin: -275px 0 0 20px;
 		}
 	}
 	
 	
 	#header {
 		margin: 0;
-		padding: 0;
-		height: 125px;
+		padding: 0 50px;
+		height: 130px;
 		
 		#login{
 			text-align: center;

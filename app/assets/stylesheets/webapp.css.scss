@@ -84,6 +84,27 @@ body{
 		#sidebar_bottom{
 			
 		}
+		
+		#headerbar_left{
+			background: url('layout/headerbar_left.png') no-repeat;
+			height: 85px;
+			width: 50px;
+			float: left;
+		}
+		
+		#headerbar{
+			background: url('layout/headerbar.png') repeat-x;
+			height: 85px;
+						float: left;
+		}
+		
+		#headerbar_right{
+			background: url('layout/headerbar_right.png') no-repeat;
+			height: 85px;
+			width: 50px;
+						float: left;
+		}
+				
 	}
 	
 
