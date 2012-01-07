@@ -1,0 +1,12 @@
+.cancel_button{
+		display: block;
+		width: 154px; height: 45px;
+		background-image: url(../layout/buttons.png);
+		background-position: top;
+		text-indent: -9999px;
+		&:active{
+			background-position: bottom;
+		}
+
+	
+}

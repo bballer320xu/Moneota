@@ -1,0 +1,37 @@
+<% content_for :content do %>
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <b>Name:</b>
+	  <%= @contact.name %>
+	</p>
+
+	<p>
+	  <b>Address:</b>
+	  <%= @contact.address %>
+	</p>
+
+	<p>
+	  <b>City:</b>
+	  <%= @contact.city %>
+	</p>
+
+	<p>
+	  <b>State:</b>
+	  <%= @contact.state %>
+	</p>
+
+	<p>
+	  <b>Birthdate:</b>
+	  <%= @contact.birthdate %>
+	</p>
+
+	<p>
+	  <b>Anniversary:</b>
+	  <%= @contact.anniversary %>
+	</p>
+
+	<%= link_to 'Back', contacts_path %>
+	<%= button_to "Make Changes", edit_contact_path(@contact), :method => "get", :class =>"float_right" %>
+<% end %>
+<%= render :file => 'layouts/webapp' %>

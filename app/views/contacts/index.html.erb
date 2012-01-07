@@ -1,0 +1,35 @@
+<% content_for :content do %>
+	<h1>My Contacts</h1>
+
+	<table id="contacts_table">
+		<thead>
+		  <tr>
+		    <th scope="col" id="name_header">Name</th>
+		    <th scope="col" id="birthdate_header">Birthdate</th>
+		    <th scope="col" id="show_header"></th>
+		    <th scope="col" id="edit_header"></th>
+		    <th scope="col" id="destroy_header"></th>
+		  </tr>
+		</thead>
+		<tbody>
+			<% @contacts.each_with_index do |contact, index| %>
+	  		<tr>
+		    	<td class="<%= index.even? ? 'odd' : '' %>"><%= contact.name %></td>
+			    <td class="<%= index.even? ? 'odd' : '' %>"><%= contact.birthdate %></td>
+			    <td class="<%= index.even? ? 'odd' : '' %> action"><%= link_to 'View Information', contact %></td>
+			    <td class="<%= index.even? ? 'odd' : '' %> action"><%= link_to 'Edit', edit_contact_path(contact) %></td>
+			    <td class="<%= index.even? ? 'odd' : '' %> action"><%= link_to 'Delete', contact, confirm: 'Are you sure?', method: :delete %></td>
+  			</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<br />
+
+
+	
+
+	 <%= link_to "New Contact", new_contact_path, :class =>"float_right" %>
+
+
+<% end %>
+<%= render :file => 'layouts/webapp' %>

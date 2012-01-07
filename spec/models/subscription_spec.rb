@@ -12,8 +12,4 @@ describe Subscription do
     user = User.create(@attr)
   end
   
-  describe "newsletter" do
-
-  end
-  
 end

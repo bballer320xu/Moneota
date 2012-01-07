@@ -1,6 +1,6 @@
 <% content_for :content do %>
 <div id="bulletin">
-	<h2>Homepage</h2>
+		<%= render :partial => "global/headerbar", :locals => {:text => "Homepage", :style => "full" } %>
 	<p>
 		This is the homepage for a logged in user.<br/>  You will stay here until you log out.
 	</p>

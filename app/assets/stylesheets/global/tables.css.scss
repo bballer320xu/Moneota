@@ -1,0 +1,44 @@
+/* ------------------
+ styling for the tables 
+   ------------------   */
+
+
+body
+{
+	line-height: 1.6em;
+
+	table{
+		font-size: 12px;
+		text-align: left;
+		border-collapse: collapse;
+		width: 100%;
+		margin-bottom: -5px;
+	
+		thead {
+			border: 1px solid gray;
+		}
+		
+		tbody{
+			border: 1px solid gray;
+		}
+		
+		th{
+			font-size: 14px;
+			font-weight: normal;
+			padding: 10px 8px;
+			background: #CEE5FF;
+		}
+		
+		td{
+			padding: 8px;
+		}
+		
+		.odd{
+			background: #FCCEB5; 
+		}
+		
+		.action{
+			text-align: right;
+		}
+	}
+}

@@ -1,10 +1,11 @@
 <% content_for :navigation do %>
 	<% if user_signed_in? %>
 	<ul>
+		
 		<li><%= link_to t('menu.logout'), destroy_user_session_path %></li>
 		<li><%= link_to t('menu.change_email_preferences'), subscription_index_path %></li>
 		<li><%= link_to t('menu.edit_my_settings'), edit_user_registration_path %></li>
-		<li><%= link_to t('menu.home'), root_path %></li>
+		<li><%= link_to t('menu.contacts'), contacts_path %></li>
 	</ul>
 	<% else %>
 	<ul>
